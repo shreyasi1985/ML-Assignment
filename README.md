@@ -71,7 +71,7 @@ Outputs are written to `results/`, `model/` and `test_data.csv`.
 
 | ML Model Name | Accuracy | AUC | Precision | Recall | F1 | MCC |
 |---|---|---|---|---|---|---|
-| Logistic Regression | | | | | | |
+| Logistic Regression |0.8569 | | | | | |
 | Decision Tree | | | | | | |
 | kNN | | | | | | |
 | Naive Bayes | | | | | | |
