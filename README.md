@@ -58,24 +58,19 @@ project-folder/
 │-- results/                       # metrics.csv, charts (generated)
 ```
 
-### How to run
-```bash
-pip install -r requirements.txt
-python model/train_models.py          # downloads the dataset from UCI automatically
-# or open model/ML_Assignment_2.ipynb and Run All
-```
+
 Outputs are written to `results/`, `model/` and `test_data.csv`.
 
 ## 4. Models Used – Comparison Table
-> Paste the contents of `results/results_table.md` here after running.
+> 
 
 | ML Model Name | Accuracy | AUC | Precision | Recall | F1 | MCC |
 |---|---|---|---|---|---|---|
-| Logistic Regression |0.8569 | | | | | |
-| Decision Tree | | | | | | |
-| kNN | | | | | | |
-| Naive Bayes | | | | | | |
-| Random Forest (Ensemble) | | | | | | |
+| Logistic Regression |0.8569 |0.9099 |0.7437 |0.6199 |0.6762 |0.5893 |
+| Decision Tree |0.8665 |0.9107 |0.7915 |0.6052 |0.6859 |0.6118 |
+| kNN |0.8459 |0.8903 |0.7016 |0.6269 |0.6622 |0.5643 |
+| Naive Bayes |0.5361 |0.7492 |0.3369 |0.956 |0.4983 |0.33 |
+| Random Forest (Ensemble) |0.8619 |0.9092 |0.7451 |0.6486 |0.6935 |0.6073 |
 
 ### Graphs
 ![Metrics comparison](results/metrics_comparison.png)
@@ -85,16 +80,16 @@ Outputs are written to `results/`, `model/` and `test_data.csv`.
 ![Class distribution](results/class_distribution.png)
 
 ## 5. Observations
-> Start from `results/auto_observations.md` and add the reasoning below, using YOUR numbers.
+> 
 
 | ML Model Name | Observation about model performance |
 |---|---|
-| Logistic Regression | Strong linear baseline; with one-hot + scaled features it usually gives a high AUC and is stable. Check whether recall on the minority class (`>50K`) is lower than precision. |
-| Decision Tree | Depth-limited to curb overfitting; easy to interpret, but typically lower AUC than ensembles because a single tree has high variance. |
-| kNN | Sensitive to the ~100 one-hot dimensions (distance becomes less meaningful); typically high precision but weaker recall on the minority class; slowest at prediction time. |
-| Naive Bayes | Gaussian assumption and feature independence fit one-hot data poorly; usually the lowest accuracy/MCC, often with very high recall but low precision (or the reverse) – look at the confusion matrix. |
-| Random Forest (Ensemble) | Averaging many trees reduces variance and captures non-linear interactions; usually top or near-top on AUC/F1/MCC. |
-| **Overall winner** | *Name the model with the best MCC/AUC/F1 in your table and justify it (MCC is the most reliable single number for an imbalanced target).* |
+| Logistic Regression | accuracy 0.857, AUC 0.910, MCC 0.589; favours precision over recall (misses many >50K cases). Best on: none; weakest on: none. |
+| Decision Tree | accuracy 0.867, AUC 0.911, MCC 0.612; favours precision over recall (misses many >50K cases). Best on: Accuracy, AUC, Precision, MCC; weakest on: Recall. |
+| kNN | accuracy 0.846, AUC 0.890, MCC 0.564; favours precision over recall (misses many >50K cases). Best on: none; weakest on: none. |
+| Naive Bayes | accuracy 0.536, AUC 0.749, MCC 0.330; favours recall over precision (over-predicts >50K). Best on: Recall; weakest on: Accuracy, AUC, Precision, F1, MCC. |
+| Random Forest (Ensemble) | accuracy 0.862, AUC 0.909, MCC 0.607; favours precision over recall (misses many >50K cases). Best on: F1; weakest on: none. |
+| **Overall winner** | *Overall winner (best average rank across 6 metrics): Decision Tree** (MCC 0.612, AUC 0.911).* |
 
 ## 6. Screenshot
 BITS Virtual Lab execution screenshot: `screenshots/bits_virtual_lab.png` (also included in the submitted PDF).
