@@ -92,4 +92,5 @@ Outputs are written to `results/`, `models/` and `test_data.csv`.
 | **Overall winner** | *Overall winner (best average rank across 6 metrics): Decision Tree** (MCC 0.612, AUC 0.911).* |
 
 ## 6. Screenshot
-BITS Virtual Lab execution screenshot: `screenshots/bits_virtual_lab.png` (also included in the submitted PDF).
+BITS Virtual Lab execution screenshot: 
+`screenshots/BITS_Virtual_Lab1.png` (also included in the submitted PDF).
