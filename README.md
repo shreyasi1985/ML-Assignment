@@ -91,7 +91,7 @@ Outputs are written to `results/`, `models/` and `test_data.csv`.
 | Random Forest (Ensemble) | accuracy 0.862, AUC 0.909, MCC 0.607; favours precision over recall (misses many >50K cases). Best on: F1; weakest on: none. |
 | **Overall winner** | *Overall winner (best average rank across 6 metrics): Decision Tree** (MCC 0.612, AUC 0.911).* |
 
-## 6. Screenshot
+## 6. Screenshots from BITS Virtual Lab
 BITS Virtual Lab execution screenshot: 
 
 ![](screenshots/BITS_Virtual_Lab1.png)
