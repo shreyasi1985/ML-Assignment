@@ -44,7 +44,7 @@ class imbalance, mixed numeric + categorical features), and is a well-known benc
 All use `random_state=42`.
 
 ## 3. GitHub Repository Link
-`<PASTE YOUR REPO URL HERE>`
+`<(https://github.com/shreyasi1985/ML-Assignment/tree/main)>`
 
 ```
 project-folder/
@@ -59,7 +59,7 @@ project-folder/
 ```
 
 
-Outputs are written to `results/`, `model/` and `test_data.csv`.
+Outputs are written to `results/`, `models/` and `test_data.csv`.
 
 ## 4. Models Used – Comparison Table
 > 
