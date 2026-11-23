@@ -93,5 +93,15 @@ Outputs are written to `results/`, `models/` and `test_data.csv`.
 
 ## 6. Screenshot
 BITS Virtual Lab execution screenshot: 
-![Class distribution](screenshots/BITS_Virtual_Lab1.png)
-`screenshots/BITS_Virtual_Lab1.png` (also included in the submitted PDF).
+
+![](screenshots/BITS_Virtual_Lab1.png)
+![](screenshots/BITS_Virtual_Lab2.png)
+![](screenshots/BITS_Virtual_Lab3.png)
+![](screenshots/BITS_Virtual_Lab4.png)
+![](screenshots/BITS_Virtual_Lab5.png)
+![](screenshots/BITS_Virtual_Lab6.png)
+![](screenshots/BITS_Virtual_Lab7.png)
+![](screenshots/BITS_Virtual_Lab8.png)
+![](screenshots/BITS_Virtual_Lab9.png)
+![](screenshots/BITS_Virtual_Lab10.png)
+
